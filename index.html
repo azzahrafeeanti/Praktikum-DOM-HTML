@@ -46,16 +46,16 @@ body {
     </ul>
 </div>
 <script>
-document.getElementById("container1").style.backgroundColor = "Lightblue";
-document.getElementById("container2").style.backgroundColor = "Lightgreen";
-const listItems = document.querySelectorAll("li");
-listItems.forEach((item, index) => {
-    item.textContent = `List Baru ${index + 1}`;
-    item.style.backgroundColor = "green";
-    item.style.color = "white";
-    item.style.fontSize = "18px";
-    item.style.fontFamily = "Courier New";
-});
+    document.getElementById("container1").style.backgroundColor = "Lightblue";
+    document.getElementById("container2").style.backgroundColor = "Lightgreen";
+    const listItems = document.querySelectorAll("li");
+    for (let i = 0; i < listItems.length; i++) {
+        listItems[i].textContent = `List Baru ${i + 1}`;
+        listItems[i].style.backgroundColor = "green";
+        listItems[i].style.color = "white";
+        listItems[i].style.fontSize = "18px";
+        listItems[i].style.fontFamily = "Courier New";
+    }
 </script>
 </body>
 </html>
